@@ -58,11 +58,28 @@ get_header(); ?>
   ##################   
   ###############--> 
 
-  <!-- BEGIN OUR TAPROOM HEADER -->
+   <!-- BEGIN OUR TAPROOM HEADER -->
+
+   <div class="taproom">
+    <header class="taphead">
+      <span>OUR TAPROOM</span>
+    </header>
 
   <!-- END OUR TAPROOM HEADER -->
 
   <!-- BEGIN REST OF OUR TAPROOM COMPONENTS -->
+
+    <section class="the-lab">
+      <img src="https://via.placeholder.com/375" alt="Evil Genius Lab" class="lab-img">
+      <h1>THE LAB</h1>
+      <p>Fishtown, Philadelphia</p>
+      <p>Evil Genius Beer Co.<br>
+        1727 Front Street
+        Philadelphia, PA 19122
+      </p>
+      <h3>215-425-6820</h3>
+    </section>
+  </div>
 
 
 
