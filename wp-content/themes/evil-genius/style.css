@@ -768,22 +768,39 @@ textarea {
 	text-align: center;
 }
 
-.tap-loc-child h1 {
+.taproom h1 {
 	color: #4A42BD;
 	font-weight: 400;
+	text-align: center;
 }
 
-.tap-loc-child h3 {
+.taproom h3 {
 	color: #4A42BD;
 	font-weight: 400;
+	text-align: center;
 }
 
-.tap-loc-child p {
+.taproom p {
 	margin: 25px 1px;
 }
 
 .taplist {
 	background-color: #FFDC00;
+	display: flex;
+	flex-direction: column;
+}
+
+.taplist-head img {
+	max-height: 600px;
+}
+
+.taplist-bottom {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.sign-up {
+	background-color: #252525;
 	display: flex;
 	flex-direction: column;
 }

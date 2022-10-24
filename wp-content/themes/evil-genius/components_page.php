@@ -89,16 +89,22 @@ get_header(); ?>
     </section>
 
     <section class="taplist">
-      <h1>OUR CURRENT TAPLIST</h1>
-      <h3>Updated 6hrs 14mins ago</h3>
-      <img src="https://via.placeholder.com/375" alt="Evil Genius Taplist" class="taplist-img">
-
-      <h1>HOURS</h1>
-      <p>SUNDAY 2:00PM - 8:00PM</p>
-
-      <h1>MENUS</h1>
-      <button class="btn-one" id="brunch">BRUNCH</button>
-      <button class="btn-one" id="all-day">ALL DAY</button>
+      <div class="taplist-head">
+        <h1>OUR CURRENT TAPLIST</h1>
+        <h3>Updated 6hrs 14mins ago</h3>
+        <img src="https://via.placeholder.com/600" alt="Evil Genius Taplist" class="taplist-img">
+      </div>
+      <div class="taplist-bottom">
+      <div class="hours">
+        <h1>HOURS</h1>
+        <p>SUNDAY 2:00PM - 8:00PM</p>
+      </div>
+      <div class="menus">
+        <h1>MENUS</h1>
+        <button class="btn-one" id="brunch">BRUNCH</button>
+        <button class="btn-one" id="all-day">ALL DAY</button>
+      </div>
+      </div>
     </section>
 
     <section class="sign-up">
