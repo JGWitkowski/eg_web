@@ -742,17 +742,50 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
-.taproom {
-	width: 375px;
-}
-
 .tap-header {
 	background-color: #4A42BD;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 .tap-header span {
-	font-size: 36px;
-	color: white;
+	font-size: 28px;
+	color: #FFFDF8;
+	border: 5px #1A2F5A solid;
+	margin: 30px;
+	padding: 2px 35px;
+}
+
+.tap-location {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	background-color: #CFFBFF;
+}
+
+.tap-loc-child {
+	text-align: center;
+}
+
+.tap-loc-child h1 {
+	color: #4A42BD;
+	font-weight: 400;
+}
+
+.tap-loc-child h3 {
+	color: #4A42BD;
+	font-weight: 400;
+}
+
+.tap-loc-child p {
+	margin: 25px 1px;
+}
+
+.taplist {
+	background-color: #FFDC00;
+	display: flex;
+	flex-direction: column;
 }
 
 /* Comments

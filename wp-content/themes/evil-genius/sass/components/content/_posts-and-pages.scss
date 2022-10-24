@@ -26,15 +26,49 @@
 
 // TAPROOM PAGE
 
-.taproom {
-	width: 375px;
-}
-
 .tap-header {
 	background-color: $color__tapBlue;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 .tap-header span {
-	font-size: 36px;
-	color: white;
+	font-size: 28px;
+	color: $color__bgLight;
+	border: 5px $color__bgDark solid;
+	margin: 30px;
+	padding: 2px 35px;
+}
+
+.tap-location {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	background-color: $color__eventsBlue;
+}
+
+.tap-loc-child {
+	text-align: center;
+}
+
+.tap-loc-child h1 {
+	color: $color__tapBlue;
+	font-weight: 400;
+}
+
+.tap-loc-child h3 {
+	color: $color__tapBlue;
+	font-weight: 400;
+
+}
+
+.tap-loc-child p {
+	margin: 25px 1px;
+}
+
+.taplist {
+	background-color: $color__tapYellow;
+	display: flex;
+	flex-direction: column;
 }

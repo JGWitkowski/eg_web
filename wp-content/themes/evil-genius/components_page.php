@@ -77,17 +77,20 @@ get_header(); ?>
 
     <section class="tap-location">
       <img src="https://via.placeholder.com/375" alt="Evil Genius Lab" class="lab-img">
+      <div class="tap-loc-child">
       <h1>THE LAB</h1>
       <p>Fishtown, Philadelphia</p>
-      <p>Evil Genius Beer Co.<br>
+      <p>Evil Genius Beer Co.
         1727 Front Street
         Philadelphia, PA 19122
       </p>
       <h3>215-425-6820</h3>
+      </div>
     </section>
 
     <section class="taplist">
       <h1>OUR CURRENT TAPLIST</h1>
+      <h3>Updated 6hrs 14mins ago</h3>
       <img src="https://via.placeholder.com/375" alt="Evil Genius Taplist" class="taplist-img">
 
       <h1>HOURS</h1>
