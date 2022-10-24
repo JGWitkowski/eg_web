@@ -111,7 +111,7 @@ get_header(); ?>
       <h1>EVIL NEWSLETTER</h1>
       <form>
         <input type="text" id="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS">
-        <input type="submit" class="form-submit">
+        <button type="submit" class="form-submit">SIGN UP</button>
       </form>
 
       <h1>CONTACT US</h1>

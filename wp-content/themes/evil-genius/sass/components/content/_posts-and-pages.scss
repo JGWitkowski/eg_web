@@ -74,6 +74,10 @@
 	flex-direction: column;
 }
 
+.taplist h1 {
+	text-align: left;
+}
+
 .taplist-head img {
 	max-height: 600px;
 }
@@ -83,8 +87,14 @@
 	grid-template-columns: 1fr 1fr;
 }
 
+.menus {
+	display: flex;
+	flex-direction: column;
+}
+
 .sign-up {
 	background-color: $color__footer;
 	display: flex;
 	flex-direction: column;
+	color: $color__bgLight;
 }

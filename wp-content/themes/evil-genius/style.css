@@ -573,18 +573,48 @@ input[type="submit"]:focus {
 	border: 2px #1162F1 solid;
 	background-color: transparent;
 	padding: 5px 55px;
+	margin: 5px;
 	border-radius: 0;
 }
 
 .btn-one:hover {
 	border: 2px #CFFBFF solid;
 	background-color: #CFFBFF;
-	transition: .3s;
+	transition: .2s;
+	transform: scale(1.04);
 }
 
 .btn-one:visited {
 	border: 2px #252525 solid;
 	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-two {
+	background-color: #1162F1;
+	border: none;
+	border-radius: 0;
+	color: #FFFDF8;
+}
+
+.btn-two:hover {
+	background-color: #FFDC00;
+	color: #252525;
+	transition: .2s;
+	transform: scale(1.04);
+}
+
+.form-submit {
+	background-color: #1162F1;
+	border: none;
+	border-radius: 0;
+	color: #FFFDF8;
+}
+
+.form-submit:hover {
+	background-color: #FFDC00;
+	color: #252525;
+	transition: .2s;
+	transform: scale(1.04);
 }
 
 input[type="text"],
@@ -808,6 +838,10 @@ textarea {
 	flex-direction: column;
 }
 
+.taplist h1 {
+	text-align: left;
+}
+
 .taplist-head img {
 	max-height: 600px;
 }
@@ -817,10 +851,16 @@ textarea {
 	grid-template-columns: 1fr 1fr;
 }
 
+.menus {
+	display: flex;
+	flex-direction: column;
+}
+
 .sign-up {
 	background-color: #252525;
 	display: flex;
 	flex-direction: column;
+	color: #FFFDF8;
 }
 
 /* Comments
