@@ -742,6 +742,19 @@ textarea {
 	margin: 0 0 1.5em;
 }
 
+.taproom {
+	width: 375px;
+}
+
+.tap-header {
+	background-color: #4A42BD;
+}
+
+.tap-header span {
+	font-size: 36px;
+	color: white;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -950,5 +963,3 @@ textarea {
 .eg--white {
 	color: #fff;
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -44,9 +44,15 @@ get_header(); ?>
 
 
   <!-- BEGIN SEASONAL BEERS LIST -->
-
+  <ul class="eg-beers__seasonal-list">
     <!-- BEGIN SEASONAL BEERS ITEM -->
-
+    <li class="eg-beers__seasonal-item">
+        <div class="eg-beers__seaosonal-item-top">
+            <h2 class="eg-h2 seasonal">#ICAN'TEVEN</h2>
+            <h3 class="eg-h3 seasonal">WATERMELON ALE</h3>
+        </div>
+    </li>
+</ul>
     <!-- END SEASONAL BEERS ITEM -->
 
   <!-- END SEASONAL BEERS LIST -->
@@ -61,7 +67,7 @@ get_header(); ?>
    <!-- BEGIN OUR TAPROOM HEADER -->
 
    <div class="taproom">
-    <header class="taphead">
+    <header class="tap-header">
       <span>OUR TAPROOM</span>
     </header>
 
@@ -69,7 +75,7 @@ get_header(); ?>
 
   <!-- BEGIN REST OF OUR TAPROOM COMPONENTS -->
 
-    <section class="the-lab">
+    <section class="tap-location">
       <img src="https://via.placeholder.com/375" alt="Evil Genius Lab" class="lab-img">
       <h1>THE LAB</h1>
       <p>Fishtown, Philadelphia</p>
@@ -78,6 +84,34 @@ get_header(); ?>
         Philadelphia, PA 19122
       </p>
       <h3>215-425-6820</h3>
+    </section>
+
+    <section class="taplist">
+      <h1>OUR CURRENT TAPLIST</h1>
+      <img src="https://via.placeholder.com/375" alt="Evil Genius Taplist" class="taplist-img">
+
+      <h1>HOURS</h1>
+      <p>SUNDAY 2:00PM - 8:00PM</p>
+
+      <h1>MENUS</h1>
+      <button class="btn-one" id="brunch">BRUNCH</button>
+      <button class="btn-one" id="all-day">ALL DAY</button>
+    </section>
+
+    <section class="sign-up">
+      <h1>EVIL NEWSLETTER</h1>
+      <form>
+        <input type="text" id="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS">
+        <input type="submit" class="form-submit">
+      </form>
+
+      <h1>CONTACT US</h1>
+      <p>Evil Genius Beer Co.</p>
+      <p>info@evilgenius.com</p>
+
+      <h1?>FOLLOW US</h1>
+
+      <button class="btn-two">WHOLESALERS</button>
     </section>
   </div>
 

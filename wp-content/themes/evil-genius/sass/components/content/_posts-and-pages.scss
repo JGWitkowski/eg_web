@@ -1,3 +1,5 @@
+@import "../../abstracts/variables/colors";
+
 .sticky {
 	display: block;
 }
@@ -20,4 +22,19 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+// TAPROOM PAGE
+
+.taproom {
+	width: 375px;
+}
+
+.tap-header {
+	background-color: $color__tapBlue;
+}
+
+.tap-header span {
+	font-size: 36px;
+	color: white;
 }
