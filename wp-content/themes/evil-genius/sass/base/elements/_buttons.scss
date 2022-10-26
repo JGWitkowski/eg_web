@@ -22,8 +22,12 @@ input[type="submit"] {
 	}
 }
 
+// EG BUTTONS
+
 .btn-one {
-	border: 2px $color__btnBlue solid;
+	border: 4px $color__btnBlue solid;
+	color: $color__btnBlue;
+	font-size: 20px;
 	background-color: transparent;
 	padding: 5px 55px;
 	margin: 5px;
@@ -33,7 +37,6 @@ input[type="submit"] {
 		border: 2px $color__eventsBlue solid;
 		background-color: $color__eventsBlue;
 		transition: .2s;
-		transform: scale(1.04);
 	}
 
 	&:visited {
@@ -53,7 +56,6 @@ input[type="submit"] {
 		background-color: $color__tapYellow;
 		color: $color__footer;
 		transition: .2s;
-		transform: scale(1.04);
 	}
 }
 

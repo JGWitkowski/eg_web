@@ -107,21 +107,29 @@ get_header(); ?>
       </div>
     </section>
 
-    <section class="sign-up">
-      <h1>EVIL NEWSLETTER</h1>
-      <form>
-        <input type="text" id="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS">
-        <button type="submit" class="form-submit">SIGN UP</button>
-      </form>
+    <footer class="taproom-footer">
+      <div class="footer-sign-up">
+        <h1>EVIL NEWSLETTER</h1>
+        <form>
+          <input type="text" id="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS">
+          <button type="submit" class="form-submit">SIGN UP</button>
+        </form>
 
-      <h1>CONTACT US</h1>
-      <p>Evil Genius Beer Co.</p>
-      <p>info@evilgenius.com</p>
+        <h1>CONTACT US</h1>
+        <p>Evil Genius Beer Co.</p>
+        <p>info@evilgenius.com</p>
+      </div>
 
-      <h1?>FOLLOW US</h1>
+    <div class="footer-follow">
+        <h1>FOLLOW US</h1>
+    </div>
 
+    <div class="footer-logo">
       <button class="btn-two">WHOLESALERS</button>
-    </section>
+    </div>
+
+  </footer>
+
   </div>
 
 
