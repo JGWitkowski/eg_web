@@ -614,7 +614,6 @@ input[type="submit"]:focus {
 	background-color: #FFDC00;
 	color: #252525;
 	transition: .2s;
-	transform: scale(1.04);
 }
 
 input[type="text"],
@@ -818,11 +817,14 @@ textarea {
 
 .tap-loc-child {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
 }
 
 .taproom h1 {
 	color: #4A42BD;
-	font-weight: 400;
+	font-weight: 500;
 	text-align: center;
 }
 
@@ -840,10 +842,11 @@ textarea {
 	background-color: #FFDC00;
 	display: flex;
 	flex-direction: column;
+	font-weight: 500;
 }
 
 .taplist h1 {
-	text-align: left;
+	text-align: center;
 }
 
 .taplist-head img {
@@ -855,9 +858,17 @@ textarea {
 	grid-template-columns: 1fr 1fr;
 }
 
+.hours h1 {
+	text-align: left;
+}
+
 .menus {
 	display: flex;
 	flex-direction: column;
+}
+
+.menus h1 {
+	text-align: left;
 }
 
 .taproom-footer {
@@ -876,18 +887,26 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	color: #FFFDF8;
-	padding: 20px;
-	margin: 20px;
+	padding: 10px;
+	margin: 10px;
 }
 
 .footer-follow {
-	display: flex;
-	flex-direction: column;
-	padding: 20px;
+	position: relative;
+	top: 200px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.footer-follow img {
+	margin: 0 5px;
 }
 
 .footer-logo {
-	padding: 20px;
+	position: relative;
+	top: 300px;
+	padding: 10px;
+	margin: 10px;
 }
 
 /* Comments

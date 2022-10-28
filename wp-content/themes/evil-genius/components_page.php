@@ -80,7 +80,8 @@ get_header(); ?>
       <div class="tap-loc-child">
       <h1>THE LAB</h1>
       <p>Fishtown, Philadelphia</p>
-      <p>Evil Genius Beer Co.
+      <p>
+      Evil Genius Beer Co.
         1727 Front Street
         Philadelphia, PA 19122
       </p>
@@ -122,6 +123,9 @@ get_header(); ?>
 
     <div class="footer-follow">
         <h1>FOLLOW US</h1>
+        <img src="https://via.placeholder.com/30" alt="Evil Genius Taplist" class="taplist-img">
+        <img src="https://via.placeholder.com/30" alt="Evil Genius Taplist" class="taplist-img">
+        <img src="https://via.placeholder.com/30" alt="Evil Genius Taplist" class="taplist-img">
     </div>
 
     <div class="footer-logo">
