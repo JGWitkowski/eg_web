@@ -32,9 +32,34 @@ get_header(); ?>
 <ul class="eg-beers__list">
     <!-- BEGIN YEAR ROUND BEERS ITEM -->
     <li class="eg-beers__list-item">
-        <div class="eg-beers__list-item-left"></div>
+        <div class="eg-beers__list-item-left">
+          <img src="https://via.placeholder.com/400" alt="Stacy's Mom" class="beers__list-img">
+        </div>
         <div class="eg-beers__list-item-right">
-            <h2 class="eg-h2 eg--white">#Adulting</h2>
+            <h1 class="beers__list-h1">STACY'S MOM</h1>
+            <h2 class="beers__list-h2">YOU'RE IN LOVE WITH THIS BEER</h2>
+            <p class="beers__list-p">
+              One of our year-round flagship beers, Stacy's Mom is an IPA with low bitterness and lots of hop flavor. It's dry-hopped entirely with Citra, which, as you may have guessed, gets it's name from its strong citrus notes. (You're so smart!)
+            </p>
+            <div class="beers__details">
+            <ul class="beers__details-list">
+              <li class="beers__details-list-item">
+                STYLE: Guava IPA
+              </li>
+              <li class="beers__details-list-item">
+                ABV: 5.5%
+              </li>
+              <li class="beers__details-list-item">
+                IBU: 11
+              </li>
+              <li class="beers__details-list-item">
+                HOPS: Hallertau, and Saaz
+              </li>
+              <li class="beers__details-list-item">
+                MALTS: 2 Row, Wheat, Carapils
+              </li>
+            </ul>
+          </div>
         </div>
     </li>
 </ul>

@@ -1026,6 +1026,53 @@ textarea {
 	padding: 0;
 }
 
+.eg-beers__list-item {
+	display: flex;
+	flex-direction: row;
+}
+
+.beers__list-img {
+	float: left;
+	margin: 10px;
+}
+
+.beers__list-h1 {
+	color: #FFFDF8;
+	font-size: 42px;
+	font-weight: 400;
+	margin: 0 15px;
+	padding: 5px;
+}
+
+.beers__list-h2 {
+	color: #FFFDF8;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0 15px;
+	padding: 5px;
+}
+
+.beers__list-p {
+	color: #FFFDF8;
+	font-size: 12px;
+	margin: 5px 15px;
+	padding: 5px;
+}
+
+.beers__details-list {
+	column-count: 2;
+	column-gap: 15px;
+	list-style: none;
+	color: #FFFDF8;
+	font-size: 12px;
+	padding: 2px;
+	margin: 20px;
+}
+
+.beers__details-list li {
+	padding: 5px;
+}
+
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
