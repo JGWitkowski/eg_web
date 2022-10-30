@@ -72,9 +72,30 @@ get_header(); ?>
   <ul class="eg-beers__seasonal-list">
     <!-- BEGIN SEASONAL BEERS ITEM -->
     <li class="eg-beers__seasonal-item">
-        <div class="eg-beers__seaosonal-item-top">
-            <h2 class="eg-h2 seasonal">#ICAN'TEVEN</h2>
-            <h3 class="eg-h3 seasonal">WATERMELON ALE</h3>
+        <div class="eg-beers__seasonal-item">
+
+          <img src="https://via.placeholder.com/300" alt="Stacy's Mom" class="beers__list-img">
+
+            <h2 class="eg-h2-seasonal">I LOVE LAMP</h2>
+            <h3 class="eg-h3-seasonal">PINEAPPLE</h3>
+        </div>
+    </li>
+    <li class="eg-beers__seasonal-item">
+        <div class="eg-beers__seasonal-item">
+
+        <img src="https://via.placeholder.com/300" alt="Stacy's Mom" class="beers__list-img">
+
+            <h2 class="eg-h2-seasonal">I LOVE LAMP</h2>
+            <h3 class="eg-h3-seasonal">PINEAPPLE</h3>
+        </div>
+    </li>
+    <li class="eg-beers__seasonal-item">
+        <div class="eg-beers__seasonal-item">
+
+        <img src="https://via.placeholder.com/300" alt="Stacy's Mom" class="beers__list-img">
+
+            <h2 class="eg-h2-seasonal">I LOVE LAMP</h2>
+            <h3 class="eg-h3-seasonal">PINEAPPLE</h3>
         </div>
     </li>
 </ul>

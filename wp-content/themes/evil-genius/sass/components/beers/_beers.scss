@@ -1,5 +1,7 @@
 @import "../../abstracts/variables/colors";
 
+// BEGIN YEAR ROUND BEER LIST 
+
 .eg-beers__list {
     background: $color__bgDark;
     display: block;
@@ -54,3 +56,35 @@
 .beers__details-list li {
     padding: 5px;
 }
+
+// END YEAR ROUND BEER LIST
+
+
+// BEGIN SEASONAL BEER LIST
+
+.eg-beers__seasonal-list {
+    column-count: 3;
+    column-gap: 5px;
+    list-style: none;
+    margin: 10px;
+}
+
+.eg-beers__seasonal-item {
+    text-align: center;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eg-h2-seasonal {
+    font-weight: 400;
+    margin: 0;
+}
+
+.eg-h3-seasonal {
+    font-weight: 400;
+    margin: 0;
+}
+
+// END SEASONAL BEER LIST
