@@ -1,3 +1,5 @@
 .DS_Store
 node_modules
-npm-debug.log
+npm-debug.log 
+wp-content/themes/evil-genius/style.css
+wp-content/themes/evil-genius/style.css.map

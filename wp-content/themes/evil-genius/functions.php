@@ -12,6 +12,201 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+function my_custom_menu() {
+    register_nav_menu('hamburger-menu',__( 'Hamburger Menu' ));
+}
+add_action( 'init', 'hamburger_menu' );
+
+/*
+* Creating a function to create our CPT
+*/
+  
+function beer_custom_post_type() {
+  
+	// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Beers', 'Post Type General Name', 'evil-genius' ),
+			'singular_name'       => _x( 'Beer', 'Post Type Singular Name', 'evil-genius' ),
+			'menu_name'           => __( 'Beers', 'evil-genius' ),
+			'parent_item_colon'   => __( 'Parent Beer', 'evil-genius' ),
+			'all_items'           => __( 'All Beers', 'evil-genius' ),
+			'view_item'           => __( 'View Beer', 'evil-genius' ),
+			'add_new_item'        => __( 'Add New Beer', 'evil-genius' ),
+			'add_new'             => __( 'Add New', 'evil-genius' ),
+			'edit_item'           => __( 'Edit Beer', 'evil-genius' ),
+			'update_item'         => __( 'Update Beer', 'evil-genius' ),
+			'search_items'        => __( 'Search Beer', 'evil-genius' ),
+			'not_found'           => __( 'Not Found', 'evil-genius' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'evil-genius' ),
+		);
+		  
+	// Set other options for Custom Post Type
+		  
+		$args = array(
+			'label'               => __( 'beers', 'evil-genius' ),
+			'description'         => __( 'Beer news and reviews', 'evil-genius' ),
+			'labels'              => $labels,
+			// Features this CPT supports in Post Editor
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+			// You can associate this CPT with a taxonomy or custom taxonomy. 
+			'taxonomies'          => array( 'genres' ),
+			/* A hierarchical CPT is like Pages and can have
+			* Parent and child items. A non-hierarchical CPT
+			* is like Posts.
+			*/
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 5,
+			'menu_icon'   => 'beer',
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'show_in_rest' => true,
+	  
+		);
+		  
+		// Registering your Custom Post Type
+		register_post_type( 'beers', $args );
+	  
+}
+	  
+	/* Hook into the 'init' action so that the function
+	* Containing our post type registration is not 
+	* unnecessarily executed. 
+	*/
+	  
+add_action( 'init', 'beer_custom_post_type', 0 );
+
+function hours_custom_post_type() {
+  
+	// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Hours', 'Post Type General Name', 'evil-genius' ),
+			'singular_name'       => _x( 'Hour', 'Post Type Singular Name', 'evil-genius' ),
+			'menu_name'           => __( 'Hours', 'evil-genius' ),
+			'parent_item_colon'   => __( 'Parent Hour', 'evil-genius' ),
+			'all_items'           => __( 'All Hours', 'evil-genius' ),
+			'view_item'           => __( 'View Hour', 'evil-genius' ),
+			'add_new_item'        => __( 'Add New Hour', 'evil-genius' ),
+			'add_new'             => __( 'Add New', 'evil-genius' ),
+			'edit_item'           => __( 'Edit Hour', 'evil-genius' ),
+			'update_item'         => __( 'Update Hour', 'evil-genius' ),
+			'search_items'        => __( 'Search Hour', 'evil-genius' ),
+			'not_found'           => __( 'Not Found', 'evil-genius' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'evil-genius' ),
+		);
+		  
+	// Set other options for Custom Post Type
+		  
+		$args = array(
+			'label'               => __( 'hours', 'evil-genius' ),
+			'description'         => __( 'Hour news and reviews', 'evil-genius' ),
+			'labels'              => $labels,
+			// Features this CPT supports in Post Editor
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+			// You can associate this CPT with a taxonomy or custom taxonomy. 
+			'taxonomies'          => array( 'genres' ),
+			/* A hierarchical CPT is like Pages and can have
+			* Parent and child items. A non-hierarchical CPT
+			* is like Posts.
+			*/
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 5,
+			'menu_icon'   => 'clock',
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'show_in_rest' => true,
+	  
+		);
+		  
+		// Registering your Custom Post Type
+		register_post_type( 'hours', $args );
+	  
+}
+	  
+	/* Hook into the 'init' action so that the function
+	* Containing our post type registration is not 
+	* unnecessarily executed. 
+	*/
+	  
+add_action( 'init', 'hours_custom_post_type', 0 );
+
+function wholesaler_custom_post_type() {
+  
+	// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Wholesaler States', 'Post Type General Name', 'evil-genius' ),
+			'singular_name'       => _x( 'Wholesaler State', 'Post Type Singular Name', 'evil-genius' ),
+			'menu_name'           => __( 'Wholesaler States', 'evil-genius' ),
+			'parent_item_colon'   => __( 'Parent Wholesaler State', 'evil-genius' ),
+			'all_items'           => __( 'All Wholesaler States', 'evil-genius' ),
+			'view_item'           => __( 'View Wholesaler State', 'evil-genius' ),
+			'add_new_item'        => __( 'Add New Wholesaler State', 'evil-genius' ),
+			'add_new'             => __( 'Add New', 'evil-genius' ),
+			'edit_item'           => __( 'Edit Wholesaler State', 'evil-genius' ),
+			'update_item'         => __( 'Update Wholesaler State', 'evil-genius' ),
+			'search_items'        => __( 'Search Wholesaler State', 'evil-genius' ),
+			'not_found'           => __( 'Not Found', 'evil-genius' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'evil-genius' ),
+		);
+		  
+	// Set other options for Custom Post Type
+		  
+		$args = array(
+			'label'               => __( 'wholesalers', 'evil-genius' ),
+			'description'         => __( 'Wholesaler State news and reviews', 'evil-genius' ),
+			'labels'              => $labels,
+			// Features this CPT supports in Post Editor
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+			// You can associate this CPT with a taxonomy or custom taxonomy. 
+			'taxonomies'          => array( 'genres' ),
+			/* A hierarchical CPT is like Pages and can have
+			* Parent and child items. A non-hierarchical CPT
+			* is like Posts.
+			*/
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 5,
+			'menu_icon'   => 'clock',
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'show_in_rest' => true,
+	  
+		);
+		  
+		// Registering your Custom Post Type
+		register_post_type( 'wholesalers', $args );
+	  
+}
+	  
+	/* Hook into the 'init' action so that the function
+	* Containing our post type registration is not 
+	* unnecessarily executed. 
+	*/
+	  
+add_action( 'init', 'wholesaler_custom_post_type', 0 );
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
