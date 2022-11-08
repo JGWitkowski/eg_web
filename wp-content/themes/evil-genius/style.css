@@ -795,8 +795,46 @@ textarea {
 
 .main-wrapper {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 	grid-auto-rows: 100%;
+	width: auto;
+}
+
+.eg__box1 {
+	background-color: #F43B49;
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.eg__box2 {
+	background-color: #00DC8C;
+	grid-column: span 1;
+	grid-row: span 2;
+}
+
+.eg__box3 {
+	background-color: #FF7100;
+	grid-column: 4 / 4;
+	grid-row: span 2;
+}
+
+.eg__box4 {
+	background-color: #FF80C4;
+	grid-column: span 2;
+	grid-row: 3 / 3;
+}
+
+.eg__box5 {
+	background-color: #4A42BD;
+	grid-column: span 2;
+	grid-row: 4 / 4;
+}
+
+.eg__box6 {
+	background-color: #CFFBFF;
+	grid-column: span 2;
+	grid-row: span 2;
 }
 
 .tap-header {

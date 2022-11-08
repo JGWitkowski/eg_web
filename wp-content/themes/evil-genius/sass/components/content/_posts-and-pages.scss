@@ -27,8 +27,46 @@
 
 .main-wrapper {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 100%
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 100%;
+	width: auto;
+}
+
+.eg__box1 {
+	background-color: $color__toGoRed;
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.eg__box2 {
+	background-color: $color__finderGreen;
+	grid-column: span 1;
+	grid-row: span 2;
+}
+
+.eg__box3 {
+	background-color: $color__beerOrange;
+	grid-column: 4 / 4;
+	grid-row: span 2;
+}
+
+.eg__box4 {
+	background-color: $color__merchPink;
+	grid-column: span 2;
+	grid-row: 3 / 3;
+}
+
+.eg__box5 {
+	background-color: $color__tapBlue;
+	grid-column: span 2;
+	grid-row: 4 / 4;
+}
+
+.eg__box6 {
+	background-color: $color__eventsBlue;
+	grid-column: span 2;
+	grid-row: span 2;
 }
 
 // MAIN PAGE END
