@@ -154,7 +154,7 @@ get_header(); ?>
       </div>
     </section>
 
-    <footer class="taproom-footer">
+    <footer class="footer">
       <div class="footer-sign-up">
         <h1>EVIL NEWSLETTER</h1>
         <form>
@@ -181,8 +181,20 @@ get_header(); ?>
   </footer>
 
   </div>
+  <!-- END TAPROOM COMPONENTS -->
 
+  <!-- BEGIN MAIN PAGE COMPONENTS -->
 
+  <div class="main-wrapper">
+    <div class="eg__box1">BEER TO GO</div>
+    <div class="eg__box2">BEER FINDER</div>
+    <div class="eg__box3">OUR BEERS</div>
+    <div class="eg__box4">GET MERCH</div>
+    <div class="eg__box5">TAP ROOMS</div>
+    <div class="eg__box6">EVENTS</div>
+  </div>
+
+  <!-- END MAIN PAGE COMPONENTS -->
 
   </div><!-- #content -->
 </div><!-- #primary -->

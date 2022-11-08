@@ -23,12 +23,17 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+// MAIN PAGE START
+
+.main-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 100%
+}
+
+// MAIN PAGE END
 
 // TAPROOM PAGE
-
-// .taproom {
-// 	// font-family: 'Archivo', sans-serif;
-// }
 
 .tap-header {
 	background-color: $color__tapBlue;
@@ -108,13 +113,13 @@
 	text-align: left;
 }
 
-.taproom-footer {
+.footer {
 	background-color: $color__footer;
 	display: flex;
 	flex-direction: row;
 }
 
-.taproom-footer h1 {
+.footer h1 {
 	color: $color__bgLight;
 	text-align: left;
 	font-size: 24px;
@@ -146,6 +151,7 @@
 	margin: 10px;
 }
 
+// TAPROOM PAGE END
 
 
 
