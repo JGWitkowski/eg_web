@@ -15,7 +15,6 @@ if ( ! defined( '_S_VERSION' ) ) {
 function my_custom_menu() {
     register_nav_menu('hamburger-menu',__( 'Hamburger Menu' ));
 }
-add_action( 'init', 'hamburger_menu' );
 
 /*
 * Creating a function to create our CPT

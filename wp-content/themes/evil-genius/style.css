@@ -1197,7 +1197,3 @@ textarea {
 .rmp-menu-title, .rmp-menu-additional-content, .rmp-search-box {
 	display: none !important;
 }
-
-body {
-	background: green;
-}
