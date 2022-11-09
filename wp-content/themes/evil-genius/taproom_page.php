@@ -70,17 +70,44 @@ get_header(); ?>
   <!-- BEGIN REST OF OUR TAPROOM COMPONENTS -->
 
     <section class="the-lab">
+    <?php while ( have_posts() ) : the_post(); ?>
+<!-- <p><?php the_content(); ?></p> -->
+<h1><?php the_field('name'); ?></h1>
       <img src="https://via.placeholder.com/375" alt="Evil Genius Lab" class="lab-img">
-      <h1>THE LAB</h1>
-      <p>Fishtown, Philadelphia</p>
-      <p>Evil Genius Beer Co.<br>
-        1727 Front Street
-        Philadelphia, PA 19122
+      <h1><?php the_field('name'); ?></h1>
+      <p><?php the_field('location'); ?></p>
+      <p><?php the_field('address_line_1'); ?><br>
+      <?php the_field('address_line_2'); ?><br>
+      <?php the_field('address_line_3'); ?>
       </p>
-      <h3>215-425-6820</h3>
+      <h3><?php the_field('phone_number'); ?></h3>
+      <?php endwhile; // end of the loop. ?>
     </section>
   </div>
 
+  <?php $loop = new WP_Query( array( 'post_type' => 'hours', 'posts_per_page' => 10 ) );  ?>
+  <section class="taplist">
+      <div class="taplist-head">
+        <h1>OUR CURRENT TAPLIST</h1>
+        <h3>Updated 6hrs 14mins ago</h3>
+        <img src="https://via.placeholder.com/600" alt="Evil Genius Taplist" class="taplist-img">
+      </div>
+      <div class="taplist-bottom">
+      <div class="hours">
+        <h1>HOURS</h1>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    <!-- BEGIN YEAR ROUND BEERS LIST -->
+    <p><?php the_title();?> <?php the_field('event');?> <?php the_field('opening_time');?><?php the_field('opening_time_meridiem');?> - <?php the_field('closing_time');?><?php the_field('closing_time_meridiem');?></p>
+<?php endwhile; ?>
+      </div>
+      <div class="menus">
+        <h1>MENUS</h1>
+        <button class="btn-one" id="brunch">BRUNCH</button>
+        <button class="btn-one" id="all-day">ALL DAY</button>
+      </div>
+      </div>
+    </section>
+</div>
 
 
   </div><!-- #content -->

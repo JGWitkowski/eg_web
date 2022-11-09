@@ -206,6 +206,55 @@ function wholesaler_custom_post_type() {
 	  
 add_action( 'init', 'wholesaler_custom_post_type', 0 );
 
+
+add_action( 'init', 'create_beer_types_nonhierarchical_taxonomy', 0 );
+  
+function create_beer_types_nonhierarchical_taxonomy() {
+  
+// Labels part for the GUI
+  
+  $labels = array(
+    'name' => _x( 'Beer Types', 'taxonomy general name' ),
+    'singular_name' => _x( 'Beer Type', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Beer Types' ),
+    'popular_items' => __( 'Popular Beer Types' ),
+    'all_items' => __( 'All Beer Types' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Beer Type' ), 
+    'update_item' => __( 'Update Beer Type' ),
+    'add_new_item' => __( 'Add New Beer Type' ),
+    'new_item_name' => __( 'New Beer Type Name' ),
+    'separate_items_with_commas' => __( 'Separate beer types with commas' ),
+    'add_or_remove_items' => __( 'Add or remove beer types' ),
+    'choose_from_most_used' => __( 'Choose from the most used beer types' ),
+    'menu_name' => __( 'Beer Types' ),
+  ); 
+  
+// Now register the non-hierarchical taxonomy like tag
+  
+  register_taxonomy('beer_types','beers',array(
+    'hierarchical' => false,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_in_rest' => true,
+    'show_admin_column' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'beer_types' ),
+  ));
+}
+
+add_action( 'wp_enqueue_scripts', 'add_my_beer_filter_script' );
+function add_my_beer_filter_script() {
+    wp_enqueue_script(
+        'filter-beer', // name your script so that you can attach other scripts and de-register, etc.
+        get_template_directory_uri() . '/js/filter-beer.js', // this is the location of your script file
+        array('jquery') // this array lists the scripts upon which your script depends
+    );
+}
+
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
