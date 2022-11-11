@@ -81,6 +81,7 @@ get_header(); ?>
             </div>
         </div>
 </div>
-
-
+<p class="test-college">TEST college</p>
+<p class="test-script">TEST script</p>
+<p class="text-condensed">test condensed</p>    
 <?php get_footer(); ?>

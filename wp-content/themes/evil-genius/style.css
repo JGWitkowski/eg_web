@@ -836,6 +836,18 @@ textarea {
 	margin: 0 auto;
 }
 
+.test-college {
+	font-family: "Intensa-College", Arial, sans-serif;
+}
+
+.test-script {
+	font-family: "Intensa-Script", Arial, sans-serif;
+}
+
+.text-condensed {
+	font-family: "Intensa-RegularCondensed", Arial, sans-serif;
+}
+
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
