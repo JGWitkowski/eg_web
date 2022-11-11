@@ -669,6 +669,173 @@ textarea {
 	border-radius: 0;
 }
 
+.acc-container {
+	width: 100%;
+}
+
+.acc {
+	margin-bottom: 10px;
+}
+
+.acc-head {
+	position: relative;
+	border-bottom: 2px solid black;
+}
+
+.acc-head:not(.acc-head--for-wholesalers) {
+	cursor: pointer;
+}
+
+.acc-head h1 {
+	font-family: "Intensa-BoldCondensed", Arial, sans-serif;
+	color: #1257EF;
+	text-transform: uppercase;
+	font-size: 82px;
+	line-height: 82px;
+	margin: 0;
+	padding: 7px 0 16px 0;
+}
+
+.acc-head:not(.acc-head--for-wholesalers)::before,
+.acc-head:not(.acc-head--for-wholesalers)::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transition: all .3s;
+	background: #000;
+}
+
+.acc-head:not(.acc-head--for-wholesalers)::before {
+	right: 43px;
+	width: 3px;
+	height: 48px;
+	margin-top: -24px;
+}
+
+.acc-head:not(.acc-head--for-wholesalers)::after {
+	right: 21px;
+	width: 48px;
+	height: 3px;
+	margin-top: -2px;
+}
+
+.acc-head p {
+	font-weight: bold;
+}
+
+.acc-content {
+	display: none;
+}
+
+.acc-content h2 {
+	font-size: 38px;
+	font-family: "Intensa-BoldCondensed", Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 36px 0 19px 0;
+}
+
+.acc-content p {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 20px;
+}
+
+.acc-content .wp-block-columns {
+	padding-bottom: 18px;
+	width: 50%;
+}
+
+.acc-content-layout {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.acc-content-layout .wp-block-group {
+	width: 50%;
+}
+
+.acc-head.active::before {
+	transform: rotate(90deg);
+}
+
+.whole-salers-heading-container {
+	background-color: #1162F1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 150px 0;
+	margin-bottom: 113px;
+}
+
+.whole-salers-heading-container--for {
+	background-color: #000;
+}
+
+.for-wholesalers-grid {
+	margin-top: 49px;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.for-wholesalers-download-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	width: 260px;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	margin-bottom: 49px;
+}
+
+.for-wholesalers-download-wrapper:visited {
+	color: #000;
+}
+
+.for-wholesalers-download-wrapper img {
+	margin-bottom: 24px;
+}
+
+.for-wholesalers-download-wrapper p {
+	font-size: 36px;
+	color: #000;
+	text-decoration: none;
+	font-family: "Intensa-BoldCondensed", Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+	text-align: center;
+}
+
+.for-wholesalers-download-wrapper--half {
+	max-width: 573px;
+	width: 50%;
+}
+
+.acc-head--for-wholesalers {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.acc-head--for-wholesalers a:hover {
+	cursor: pointer;
+}
+
+.acc-head--for-wholesalers a {
+	font-size: 36px;
+	color: #000;
+	text-decoration: none;
+	font-family: "Intensa-BoldCondensed", Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.site-content {
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+}
+
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/

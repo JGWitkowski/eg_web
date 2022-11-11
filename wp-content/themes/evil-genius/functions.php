@@ -198,14 +198,184 @@ function wholesaler_custom_post_type() {
 		register_post_type( 'wholesalers', $args );
 	  
 }
+
+add_action( 'init', 'wholesaler_custom_post_type', 0 );
 	  
 	/* Hook into the 'init' action so that the function
 	* Containing our post type registration is not 
 	* unnecessarily executed. 
 	*/
 	  
-add_action( 'init', 'wholesaler_custom_post_type', 0 );
 
+function salessheet_custom_post_type() {
+  
+	// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Sales Sheet', 'Post Type General Name', 'evil-genius' ),
+			'singular_name'       => _x( 'Sales Sheet', 'Post Type Singular Name', 'evil-genius' ),
+			'menu_name'           => __( 'Sales Sheet', 'evil-genius' ),
+			'parent_item_colon'   => __( 'Parent Sales Sheet', 'evil-genius' ),
+			'all_items'           => __( 'All Sales Sheet', 'evil-genius' ),
+			'view_item'           => __( 'View Sales Sheet', 'evil-genius' ),
+			'add_new_item'        => __( 'Add New Sales Sheet', 'evil-genius' ),
+			'add_new'             => __( 'Add New', 'evil-genius' ),
+			'edit_item'           => __( 'Edit Sales Sheet', 'evil-genius' ),
+			'update_item'         => __( 'Update Sales Sheet', 'evil-genius' ),
+			'search_items'        => __( 'Search Sales Sheet', 'evil-genius' ),
+			'not_found'           => __( 'Not Found', 'evil-genius' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'evil-genius' ),
+		);
+		  
+	// Set other options for Custom Post Type
+		  
+		$args = array(
+			'label'               => __( 'salessheets', 'evil-genius' ),
+			'description'         => __( 'Sales Sheet news and reviews', 'evil-genius' ),
+			'labels'              => $labels,
+			// Features this CPT supports in Post Editor
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+			// You can associate this CPT with a taxonomy or custom taxonomy. 
+			'taxonomies'          => array( 'genres' ),
+			/* A hierarchical CPT is like Pages and can have
+			* Parent and child items. A non-hierarchical CPT
+			* is like Posts.
+			*/
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 5,
+			'menu_icon'   => 'clock',
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'show_in_rest' => true,
+	  
+		);
+		  
+		// Registering your Custom Post Type
+		register_post_type( 'salessheets', $args );
+	  
+}
+add_action( 'init', 'salessheet_custom_post_type', 0 );
+
+
+
+function taphandles_custom_post_type() {
+
+	// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Tap Handles', 'Post Type General Name', 'evil-genius' ),
+			'singular_name'       => _x( 'Tap Handles', 'Post Type Singular Name', 'evil-genius' ),
+			'menu_name'           => __( 'Tap Handles', 'evil-genius' ),
+			'parent_item_colon'   => __( 'Parent Tap Handles', 'evil-genius' ),
+			'all_items'           => __( 'All Tap Handles', 'evil-genius' ),
+			'view_item'           => __( 'View Tap Handles', 'evil-genius' ),
+			'add_new_item'        => __( 'Add New Tap Handles', 'evil-genius' ),
+			'add_new'             => __( 'Add New', 'evil-genius' ),
+			'edit_item'           => __( 'Edit Tap Handles', 'evil-genius' ),
+			'update_item'         => __( 'Update Tap Handles', 'evil-genius' ),
+			'search_items'        => __( 'Search Tap Handles', 'evil-genius' ),
+			'not_found'           => __( 'Not Found', 'evil-genius' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'evil-genius' ),
+		);
+			
+	// Set other options for Custom Post Type
+			
+		$args = array(
+			'label'               => __( 'taphandles', 'evil-genius' ),
+			'description'         => __( 'Tap Handles news and reviews', 'evil-genius' ),
+			'labels'              => $labels,
+			// Features this CPT supports in Post Editor
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+			// You can associate this CPT with a taxonomy or custom taxonomy. 
+			'taxonomies'          => array( 'genres' ),
+			/* A hierarchical CPT is like Pages and can have
+			* Parent and child items. A non-hierarchical CPT
+			* is like Posts.
+			*/
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 5,
+			'menu_icon'   => 'clock',
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'show_in_rest' => true,
+		
+		);
+			
+		// Registering your Custom Post Type
+		register_post_type( 'taphandles', $args );
+		
+}
+add_action( 'init', 'taphandles_custom_post_type', 0 );
+
+function logos_custom_post_type() {
+
+	// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Logos', 'Post Type General Name', 'evil-genius' ),
+			'singular_name'       => _x( 'Logos', 'Post Type Singular Name', 'evil-genius' ),
+			'menu_name'           => __( 'Logos', 'evil-genius' ),
+			'parent_item_colon'   => __( 'Parent Logos', 'evil-genius' ),
+			'all_items'           => __( 'All Logos', 'evil-genius' ),
+			'view_item'           => __( 'View Logos', 'evil-genius' ),
+			'add_new_item'        => __( 'Add New Logos', 'evil-genius' ),
+			'add_new'             => __( 'Add New', 'evil-genius' ),
+			'edit_item'           => __( 'Edit Logos', 'evil-genius' ),
+			'update_item'         => __( 'Update Logos', 'evil-genius' ),
+			'search_items'        => __( 'Search Logos', 'evil-genius' ),
+			'not_found'           => __( 'Not Found', 'evil-genius' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'evil-genius' ),
+		);
+			
+	// Set other options for Custom Post Type
+			
+		$args = array(
+			'label'               => __( 'logos', 'evil-genius' ),
+			'description'         => __( 'Logos news and reviews', 'evil-genius' ),
+			'labels'              => $labels,
+			// Features this CPT supports in Post Editor
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+			// You can associate this CPT with a taxonomy or custom taxonomy. 
+			'taxonomies'          => array( 'genres' ),
+			/* A hierarchical CPT is like Pages and can have
+			* Parent and child items. A non-hierarchical CPT
+			* is like Posts.
+			*/
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 5,
+			'menu_icon'   => 'clock',
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'show_in_rest' => true,
+		
+		);
+			
+		// Registering your Custom Post Type
+		register_post_type( 'logos', $args );
+		
+}
+add_action( 'init', 'logos_custom_post_type', 0 );
 
 add_action( 'init', 'create_beer_types_nonhierarchical_taxonomy', 0 );
   

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="862px" height="220px" viewBox="0 0 862 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="FINAL-DESIGN---RD-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Arial-BoldMT, Arial" font-size="109.230769" font-weight="bold" line-spacing="100">
+        <g id="Wholesalers" transform="translate(-292.000000, -263.000000)">
+            <g id="Group-2" transform="translate(292.000000, 263.076923)">
+                <g id="BEER-FINDER" fill="#FF0000">
+                    <text id="OUR-WHOLESALERS">
+                        <tspan x="303.424729" y="99">OUR </tspan>
+                        <tspan x="0" y="199">WHOLESALERS</tspan>
+                    </text>
+                </g>
+                <g id="BEER-FINDER-Copy" transform="translate(0.000000, 9.000000)" fill="#FFFFFF">
+                    <text id="OUR-WHOLESALERS">
+                        <tspan x="303.424729" y="99">OUR </tspan>
+                        <tspan x="0" y="199">WHOLESALERS</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
