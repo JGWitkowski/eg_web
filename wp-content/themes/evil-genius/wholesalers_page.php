@@ -13,6 +13,8 @@ get_header(); ?>
 </div>
   <div id="content" role="main">
     <div class="entry-content">
+    <div class="eg_main">
+        
         <div class="acc-container"> 
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <!-- Accordion -->       
@@ -28,6 +30,7 @@ get_header(); ?>
             </div>
         <?php endwhile; ?>
         </div>
+    </div>
     </div>
     
   </div><!-- #content -->

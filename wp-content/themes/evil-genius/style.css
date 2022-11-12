@@ -830,7 +830,7 @@ textarea {
 	margin: 0;
 }
 
-.site-content {
+.eg_main {
 	max-width: 1240px;
 	width: 100%;
 	margin: 0 auto;
@@ -846,6 +846,10 @@ textarea {
 
 .text-condensed {
 	font-family: "Intensa-RegularCondensed", Arial, sans-serif;
+}
+
+.whole-salers-heading-container--beer-finder {
+	background-color: #00DC8C;
 }
 
 /*--------------------------------------------------------------

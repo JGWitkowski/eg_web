@@ -10,6 +10,7 @@ get_header(); ?>
 <div id="primary" class="site-content">
   
   <div id="content" role="main">
+  <div class="eg_main">
   <?php $loop = new WP_Query( array( 'post_type' => 'beers', 'posts_per_page' => 10 ) );  ?>
   <div>
     <ul>
@@ -134,11 +135,7 @@ get_header(); ?>
 <?php endwhile; ?>
 </ul>
     <!-- END YEAR ROUND BEERS ITEM -->
-
-    <div class="entry-content">
-        <?php the_content(); ?>
-    </div>
-    
+  </div>
   </div><!-- #content -->
 </div><!-- #primary -->
 

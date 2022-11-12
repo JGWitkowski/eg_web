@@ -10,8 +10,9 @@ get_header(); ?>
     <div class="whole-salers-heading-container whole-salers-heading-container--for">
         <img class="whole-salers-heading-image" src="/wp-content/uploads/2022/11/forwholesalerssvg.svg">
     </div>
-  <!-- <div id="content" role="main"> -->
-    <!-- <div class="entry-content"> -->
+    <div class="eg_main">
+<!-- <div id="content" role="main"> -->
+<!-- <div class="entry-content"> -->
         <?php $loop = new WP_Query( array( 'post_type' => 'salessheets', 'posts_per_page' => 10 ) );  ?>
         <div class="acc-container"> 
             <!-- Accordion -->       
@@ -80,6 +81,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
+    </div>
 </div>
 <p class="test-college">TEST college</p>
 <p class="test-script">TEST script</p>
